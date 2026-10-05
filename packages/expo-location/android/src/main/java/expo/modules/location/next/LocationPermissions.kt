@@ -168,6 +168,9 @@ internal fun Permissions.ensureForegroundServicePermissions() {
 
 internal fun Permissions.ensureBackgroundPermissions() {
   ensureForegroundPermissions()
+  if (!isPermissionPresentInManifest(Manifest.permission.RECEIVE_BOOT_COMPLETED)) {
+    throw NoPermissionInManifestException("RECEIVE_BOOT_COMPLETED")
+  }
   if (!supportsBackgroundPermission()) {
     return
   }
