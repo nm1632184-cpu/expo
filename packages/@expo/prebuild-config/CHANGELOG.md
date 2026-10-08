@@ -1,5 +1,14 @@
 # Changelog
 
+## 58.0.11
+
+### Patch Changes
+
+- Add @expo/platforms and consume it across tooling. ([#49418](https://github.com/expo/expo/pull/49418) by [@douglowder](https://github.com/douglowder))
+- Updated dependencies. ([#49418](https://github.com/expo/expo/pull/49418), [#50956](https://github.com/expo/expo/pull/50956))
+  - @expo/config@58.0.4
+  - expo-modules-autolinking@58.0.11
+
 ## 58.0.10
 
 ### Patch Changes
